@@ -1,0 +1,88 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f5f5f5;
+}
+
+/* Cabeçalho */
+header {
+    background: #4A90E2;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Containers */
+.form-container, .tabela-container {
+    background: white;
+    width: 90%;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #4A90E2;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #357ABD;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+/* Cores de aprovação */
+.aprovado {
+    background: #c8f7c5;
+}
+
+.reprovado {
+    background: #f7c5c5;
+}
+
+/* Responsividade */
+@media (max-width: 500px) {
+    body {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 6px;
+    }
+}
