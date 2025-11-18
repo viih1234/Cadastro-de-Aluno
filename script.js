@@ -55,13 +55,13 @@ function adicionarNaTabela(nome, n1, n2, n3, media, situacao) {
 }
 
 // Função para salvar no localStorage
-function salvarLocalStorage(nome, n1, n2, n3,  media, situacao) {
+function salvarLocalStorage(nome, n1, n2, n3, media, situacao) {
     let alunos = [];
 
     if (localStorage.getItem("alunos")) {
         alunos = JSON.parse(localStorage.getItem("alunos"));
     }
 
-    alunos.push({ nome, n1, n2, media, situacao });
+    alunos.push({ nome, n1, n2, n3,  media, situacao });
     localStorage.setItem("alunos", JSON.stringify(alunos));
 }
